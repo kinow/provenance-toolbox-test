@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:bu="http://biouno.org" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <prov:activity prov:id="bu:step1">
+        <prov:startTime>2014-07-07T15:48:23.339-03:00</prov:startTime>
+        <prov:endTime>2014-07-07T15:48:23.407-03:00</prov:endTime>
+        <prov:label>Invoke Maven build step</prov:label>
+        <prov:type xsi:type="xsd:string">mvn clean test install</prov:type>
+    </prov:activity>
+    <prov:agent prov:id="bu:Bruno P. Kinoshita"/>
+    <prov:entity prov:id="bu:pom.xml">
+        <prov:label>Maven POM</prov:label>
+        <prov:type xsi:type="xsd:anyURI">http://biouno.org/primitives#File</prov:type>
+        <bu:url xsi:type="xsd:string">/tmp/pom.xml</bu:url>
+    </prov:entity>
+    <prov:wasAttributedTo prov:id="bu:job triggered by">
+        <prov:entity prov:ref="bu:pom.xml"/>
+        <prov:agent prov:ref="bu:Bruno P. Kinoshita"/>
+    </prov:wasAttributedTo>
+</prov:document>
